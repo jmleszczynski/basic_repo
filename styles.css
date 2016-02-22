@@ -3,14 +3,20 @@
 	padding: 0px;
 	font-family: "Tahoma";
 }
-
-#container {
+#container{
 	width: 900px;
-	margin: 50px auto;
+	margin: auto;
+	background-color: black;
 }
-#pics {
-	display: block;
+h1{
+	color: white;
 }
-	#pics img {
-		display: inline;
-	}
+p {
+	color: white;
+	margin-top: 15px;
+}
+img{
+	width: 400px;
+	height: 200px;
+	border: 2px solid gray;
+}
