@@ -32,3 +32,39 @@ $ touch BasicRepoAssignmentIV.text
 
 Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
 $
+-----------------------------------------------------------before first push-----------------------------------------------
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git add .
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Assignment III Branching and Merging.txt
+        new file:   BasicRepoAssignmentIV.text
+        modified:   index.html
+
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git commit -m "changes to index.html & added 2 new files"
+[master 335551f] changes to index.html & added 2 new files
+ 3 files changed, 108 insertions(+)
+ create mode 100644 Assignment III Branching and Merging.txt
+ create mode 100644 BasicRepoAssignmentIV.text
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.40 KiB | 0 bytes/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+To https://github.com/jmleszczynski/basic_repo.git
+   e8f134a..335551f  master -> master
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$
+---------------------------------------------------------after first push-------------------------------------------------
