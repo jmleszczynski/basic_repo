@@ -1,0 +1,16 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Tahoma";
+}
+
+#container {
+	width: 900px;
+	margin: 50px auto;
+}
+#pics {
+	display: block;
+}
+	#pics img {
+		display: inline;
+	}
