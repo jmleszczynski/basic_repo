@@ -1,0 +1,73 @@
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git init
+Initialized empty Git repository in C:/Users/Jon Michael/Documents/Coding Dojo/GIT/.git/
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ touch index.html
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ touch styles.css
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ ls
+index.html  styles.css
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ mkdir 'branching_merging'
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git checkout branching_merging
+error: pathspec 'branching_merging' did not match any file(s) known to git.
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git checkout 'branching_nerging'
+error: pathspec 'branching_nerging' did not match any file(s) known to git.
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git checkout -b "branching_merging"
+Switched to a new branch 'branching_merging'
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (branching_merging)
+$ ls
+index.html  styles.css
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (branching_merging)
+$ git checkout -b 'master'
+Switched to a new branch 'master'
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git add .
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git commit -m "added html & css"
+[master (root-commit) 77c6929] added html & css
+ 2 files changed, 34 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git checkout -b "add-css"
+Switched to a new branch 'add-css'
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (add-css)
+$ git add .
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (add-css)
+$ git commit -m "added styles to css"
+[add-css e8f134a] added styles to css
+ 2 files changed, 16 insertions(+), 8 deletions(-)
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (add-css)
+$ git checkout master
+Switched to branch 'master'
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git merge add-css
+Updating 77c6929..e8f134a
+Fast-forward
+ index.html |  2 ++
+ styles.css | 22 ++++++++++++++--------
+ 2 files changed, 16 insertions(+), 8 deletions(-)
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$
