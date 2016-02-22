@@ -68,3 +68,102 @@ To https://github.com/jmleszczynski/basic_repo.git
 Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
 $
 ---------------------------------------------------------after first push-------------------------------------------------
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git remote add origin https://github.com/jmleszczynski/basic_repo.git
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git push -u origin master
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.37 KiB | 0 bytes/s, done.
+Total 8 (delta 1), reused 0 (delta 0)
+To https://github.com/jmleszczynski/basic_repo.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Jon Michael/Documents/Coding Dojo/GIT/.git/
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ index.html
+bash: index.html: command not found
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ touch index.html
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ touch styles.css
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ touch BasicRepoAssignmentIV.text
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git add .
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Assignment III Branching and Merging.txt
+        new file:   BasicRepoAssignmentIV.text
+        modified:   index.html
+
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git commit -m "changes to index.html & added 2 new files"
+[master 335551f] changes to index.html & added 2 new files
+ 3 files changed, 108 insertions(+)
+ create mode 100644 Assignment III Branching and Merging.txt
+ create mode 100644 BasicRepoAssignmentIV.text
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.40 KiB | 0 bytes/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+To https://github.com/jmleszczynski/basic_repo.git
+   e8f134a..335551f  master -> master
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   BasicRepoAssignmentIV.text
+        modified:   index.html
+        modified:   styles.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git add .
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git commit -m "made changes in index.html, styles.css, & BasicRepoAssignmentIV.text"
+[master 983b296] made changes in index.html, styles.css, & BasicRepoAssignmentIV.text
+ 3 files changed, 37 insertions(+), 6 deletions(-)
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.21 KiB | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To https://github.com/jmleszczynski/basic_repo.git
+   335551f..983b296  master -> master
+
+Jon Michael@Tigra MINGW64 ~/Documents/Coding Dojo/GIT (master)
+$
+---------------------------------------entire session on assignment-----------------------------------------------------------
